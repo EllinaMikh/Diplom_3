@@ -1,8 +1,12 @@
 package tests;
 
+import com.diplom3.pageobject.ForgotPasswordPage;
+import com.diplom3.pageobject.LoginPage;
+import com.diplom3.pageobject.MainPage;
+import com.diplom3.pageobject.RegisterPage;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
-import pageObject.*;
+
 import static config.Constants.*;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

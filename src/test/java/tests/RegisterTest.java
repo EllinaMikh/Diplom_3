@@ -5,7 +5,7 @@ import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Before;
 import org.junit.Test;
-import pageObject.RegisterPage;
+import com.diplom3.pageobject.RegisterPage;
 import utils.User;
 import utils.UserGenerator;
 import static org.junit.Assert.assertEquals;

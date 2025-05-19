@@ -1,4 +1,4 @@
-package pageObject;
+package com.diplom3.pageobject;
 
 import config.Constants;
 import io.qameta.allure.Step;

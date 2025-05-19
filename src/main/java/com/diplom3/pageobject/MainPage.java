@@ -1,4 +1,4 @@
-package pageObject;
+package com.diplom3.pageobject;
 
 import config.Constants;
 import io.qameta.allure.Step;
@@ -71,7 +71,8 @@ public class MainPage extends BasePage {
 
     @Step("Проверка отображения заголовка 'Булки'")
     public boolean isBunsHeaderDisplayed() {
-        return isElementDisplayed(bunsHeader);
+        By bunsTab = By.xpath("//span[text()='Булки']/parent::div[contains(@class,'tab_tab_type_current')]");
+        return isElementDisplayed(bunsTab);
     }
 
     @Step("Проверка отображения заголовка 'Соусы'")

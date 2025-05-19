@@ -1,4 +1,4 @@
-package pageObject;
+package com.diplom3.pageobject;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;

@@ -2,7 +2,7 @@ package tests;
 
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
-import pageObject.MainPage;
+import com.diplom3.pageobject.MainPage;
 
 
 import static org.junit.Assert.assertTrue;
