@@ -14,9 +14,13 @@ public class MainPage extends BasePage {
     private final By orderButton = By.xpath(".//button[text()='Оформить заказ']");
     private final By saucesButton = By.xpath("//span[text()='Соусы']/parent::div");
     private final By fillingsButton = By.xpath("//span[text()='Начинки']/parent::div");
+
     private final By bunsHeader = By.xpath("//h2[text()='Булки']");
     private final By saucesHeader = By.xpath("//h2[text()='Соусы']");
     private final By fillingsHeader = By.xpath("//h2[text()='Начинки']");
+    private final By bunsTab = By.xpath("//span[text()='Булки']/parent::div[contains(@class,'tab_tab_type_current')]");
+    private final By constructorHeader = By.xpath(".//h1[text()='Соберите бургер']");
+
     public MainPage(WebDriver driver) {
         super(driver);
     }
@@ -31,7 +35,6 @@ public class MainPage extends BasePage {
         clickElement(accountButton);
         return new LoginPage(driver);
     }
-
 
     @Step("Переход в Личный кабинет, ожидаем страницу профиля")
     public ProfilePage goToProfilePage() {
@@ -48,7 +51,6 @@ public class MainPage extends BasePage {
 
     @Step("Ожидание отображения заголовка конструктора")
     public boolean waitConstructorHeader() {
-        By constructorHeader = By.xpath(".//h1[text()='Соберите бургер']");
         return isElementDisplayed(constructorHeader);
     }
 
@@ -71,7 +73,6 @@ public class MainPage extends BasePage {
 
     @Step("Проверка отображения заголовка 'Булки'")
     public boolean isBunsHeaderDisplayed() {
-        By bunsTab = By.xpath("//span[text()='Булки']/parent::div[contains(@class,'tab_tab_type_current')]");
         return isElementDisplayed(bunsTab);
     }
 

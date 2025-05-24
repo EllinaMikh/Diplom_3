@@ -11,9 +11,9 @@ public class LoginPage extends BasePage {
         super(driver);
     }
 
-    private final By userEmailField = By.xpath(".//div/label[text()='Email']/parent::div/input");
-    private final By userPasswordField = By.xpath(".//div/label[text()='Пароль']/parent::div/input");
-    private final By enterButton = By.xpath(".//button[text()='Войти']");
+    private final By userEmailField = By.cssSelector("div.input input[name='name']");
+    private final By userPasswordField = By.cssSelector("input[type='password']");
+    private final By enterButton = By.xpath("//button[contains(text(),'Войти')]");
 
     @Step("Ожидаем загрузку страницы авторизации")
     public void waitLoginPage() {
